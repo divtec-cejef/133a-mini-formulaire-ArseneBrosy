@@ -42,4 +42,14 @@ button[type="reset"] {
     color: #2c3e50;
 }
 
+/*********** FORMULAIRES ***************/
 
+label {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
