@@ -42,14 +42,66 @@ button[type="reset"] {
     color: #2c3e50;
 }
 
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px #2c3e50;
+}
+
 /*********** FORMULAIRES ***************/
+
+form {
+    padding: 20px;
+    margin: 2em auto 80px;
+    max-width: 450px;
+    background-color: white;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+form > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+form > ul > li {
+    margin-bottom: 1.5em;
+}
+
+form > ul > li:last-of-type {
+    margin-bottom: 0;
+}
 
 label {
     display: block;
+    cursor: pointer;
 }
 
-li {
-    list-style-type: none;
-    padding: 0;
-    margin: 15px 0;
+input, select, fieldset {
+    border: 2px solid #2c3e50;
+    padding: 1em;
+    width: 100%;
+}
+
+label input {
+    width: auto;
+}
+
+label > input + span {
+    font-weight: normal;
+}
+
+label > input:checked + span {
+    font-weight: bold;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 .25em;
+}
+
+fieldset label {
+    padding: 1em 0;
 }
